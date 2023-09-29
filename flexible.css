@@ -112,7 +112,30 @@ display: flex;
 
     }
 
+
 }
+
+@media only screen and (max-width:1127px) {
+    .row .col-4 #left h3{
+        font-size: 17px;
+    }
+
+    .row .col-4 #left h2{
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width:943px) {
+    .row .col-4 #left h3{
+        font-size: 15px;
+    }
+
+    .row .col-4 #left h2{
+        font-size: 17px;
+    }
+}
+
+
 
 @media only screen and (max-width:687px) {
     .row .header h1{
@@ -245,7 +268,7 @@ display: flex;
 .row .col-8 .w3-content img {
     width: 75%;
     height: 1%;
-    margin-left: 3rem;
+    margin: auto;
 }
 
 .row .col-12 #nav .active{
@@ -374,7 +397,7 @@ input[type="submit"] {
 }
 
 .row .col-12 {
-    background-color: rgb(128, 31, 31);
+    background-color: #01bcd5;
     padding: 0.5%;
     text-align: center;
     padding-bottom: 0.5%;
@@ -804,20 +827,22 @@ text-decoration: none;
     background-color: rgb(224, 24, 24); /* Change the background color on hover */
 }
 
-.row .col-8 .buttons #accept{
+.row .col-12 .buttons #accept{
     padding: 10px;
-    background-color: #3498db;
+    background-color: green;
+    margin-top: 10px;
 }
-.row .col-8 .buttons #reject{
+.row .col-12 .buttons #reject{
     padding: 10px;
     background-color: red;
+    margin-top: 10px;
 }
 
-.row .col-8 .buttons #accept:hover{
+.row .col-12 .buttons #accept:hover{
 background-color: #2b678f;
 }
 
-.row .col-8 .buttons #reject:hover{
+.row .col-12 .buttons #reject:hover{
     background-color: rgb(212, 26, 26);
 }
 
@@ -841,4 +866,22 @@ background-color: #2b678f;
 
 .row .col-4 #assign form{
 display: block;
+}
+
+.row .col-12 #budgets table{
+background-color: white;
+margin: auto;
+width: 50%;
+height: 450px;
+}
+
+.row section button{
+    padding: 5px;
+    background-color: #2b678f;
+    color: white;
+    border-radius: 5px;
+}
+
+.row section button a{
+    color: white;
 }
